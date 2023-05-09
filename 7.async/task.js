@@ -16,14 +16,7 @@ class AlarmClock {
 		});
 	}
 	removeClock(time) {
-
 		this.alarmCollection = this.alarmCollection.filter(clock => clock.time !== time);
-
-
-		/*let timeForDeleteIndex = this.alarmCollection.findIndex(clock => clock.time === time);
-		if (timeForDeleteIndex != -1) {
-			this.alarmCollection.splice(timeForDeleteIndex, 1);
-		}*/
 	}
 	getCurrentFormattedTime() {
 		let currentDate = new Date();
